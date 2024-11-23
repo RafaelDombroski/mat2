@@ -1,0 +1,85 @@
+/* Estilos atualizados */
+.container {
+    width: 30vw; /* Convertido 576px para vw */
+    height: auto !important;
+    margin-bottom: 2rem; /* Adiciona espaço entre cada container */
+}
+
+.container h1 {
+    font-size: 1vw;
+    color: #F8D57E;
+    margin-bottom: 0.5rem; /* Espaço entre o título e o parágrafo */
+}
+
+.container p {
+    width: 30vw;
+    color: #ffffff94;
+    font-size: 1vw;
+    margin-bottom: 1rem; /* Espaço entre os parágrafos */
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Adiciona espaçamento entre os containers no flexbox */
+}
+
+/* Botão estilizado */
+.button {
+    cursor: pointer;
+    position: relative;
+    padding: 0.5vw 1.25vw; /* Convertido 10px 24px para vw */
+    font-size: 0.9vw; /* Convertido 18px para vw */
+    color: rgb(193, 163, 98);
+    border: 0.1vw solid rgb(193, 163, 98); /* Convertido 2px para vw */
+    border-radius: 1.8vw; /* Convertido 34px para vw */
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 2.6vw; /* Convertido 50px para vw */
+    height: 2.6vw; /* Convertido 50px para vw */
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: rgb(193, 163, 98);
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button:hover::before {
+    scale: 3;
+}
+
+.button:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 1vw rgba(193, 163, 98, 0.4); /* Convertido 20px para vw */
+}
+
+.button:active {
+    scale: 1;
+}
+
+/* Estilos gerais do corpo */
+body {
+    gap: 1vw;
+    width: 100%;
+    height: 100%;
+    --color: rgba(114, 114, 114, 0.3);
+    background-color: #191a1a;
+    background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+        linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+    background-size: 2.8vw 2.8vw; /* Convertido 55px para vw */
+    font-family: 'Montserrat', sans-serif;
+}

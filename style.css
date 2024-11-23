@@ -1,0 +1,14 @@
+header button {
+    width: 5vw;
+    height: 2vw;
+    border-radius: 1vw; /* Convertido 20px para vw */
+    background-color: transparent;
+    border: 0.05vw solid #F8D57E; /* Convertido 1px para vw */
+    color: #F8D57E;
+}
+
+header button:hover {
+    background-color: #F8D57E;
+    color: #2B2B2B;
+    cursor: pointer;
+}
